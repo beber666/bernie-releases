@@ -1,0 +1,51 @@
+# Flatpak of Bernie for its own Flatpak repository (https://beber666.github.io/bernie-releases/flatpak/): the files of
+# the published .deb package of the architecture, as they are, in the GNOME runtime (WebKitGTK). The Flatpak workflow
+# puts the package next to this file (bernie_amd64.deb or bernie_arm64.deb).
+#
+# Sandbox: display (Wayland, X11 as a fallback), network (lasers over Wi-Fi or Ethernet, mDNS discovery, online art
+# libraries), devices (serial ports of USB lasers, camera of the laser). No access to the home folder: the Open and
+# Save dialogs go through the desktop portals, like the files opened by double-click.
+id: com.websolutis.Bernie
+runtime: org.gnome.Platform
+runtime-version: '51'
+sdk: org.gnome.Sdk
+command: bernie-desktop
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --share=ipc
+  - --device=dri
+  - --device=all
+  - --share=network
+modules:
+  - name: bernie
+    buildsystem: simple
+    # Binaries already built (published .deb package): no debug info split, no second strip.
+    build-options:
+      no-debuginfo: true
+      strip: false
+    sources:
+      - type: file
+        path: bernie_amd64.deb
+        dest-filename: bernie.deb
+        only-arches: [x86_64]
+      - type: file
+        path: bernie_arm64.deb
+        dest-filename: bernie.deb
+        only-arches: [aarch64]
+    build-commands:
+      - ar x bernie.deb
+      - tar -xf data.tar.gz
+      - install -Dm755 usr/bin/bernie-desktop /app/bin/bernie-desktop
+      - mkdir -p /app/lib && cp -r usr/lib/Bernie /app/lib/Bernie
+      # Icons under the application ID (the "256x256@2" folder of the package holds the 256-pixel icon).
+      - install -Dm644 usr/share/icons/hicolor/32x32/apps/bernie-desktop.png /app/share/icons/hicolor/32x32/apps/com.websolutis.Bernie.png
+      - install -Dm644 usr/share/icons/hicolor/128x128/apps/bernie-desktop.png /app/share/icons/hicolor/128x128/apps/com.websolutis.Bernie.png
+      - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/bernie-desktop.png /app/share/icons/hicolor/256x256/apps/com.websolutis.Bernie.png
+      - install -Dm644 usr/share/icons/hicolor/scalable/apps/bernie-desktop.svg /app/share/icons/hicolor/scalable/apps/com.websolutis.Bernie.svg
+      # Desktop file, AppStream metadata and file types under the application ID.
+      - install -Dm644 usr/share/applications/Bernie.desktop /app/share/applications/com.websolutis.Bernie.desktop
+      - sed -i 's/^Icon=.*/Icon=com.websolutis.Bernie/' /app/share/applications/com.websolutis.Bernie.desktop
+      - install -Dm644 usr/share/metainfo/com.websolutis.Bernie.metainfo.xml /app/share/metainfo/com.websolutis.Bernie.metainfo.xml
+      - sed -i 's|>Bernie.desktop</launchable>|>com.websolutis.Bernie.desktop</launchable>|' /app/share/metainfo/com.websolutis.Bernie.metainfo.xml
+      - install -Dm644 usr/share/mime/packages/bernie.xml /app/share/mime/packages/com.websolutis.Bernie.xml

@@ -20,8 +20,9 @@ on:
 permissions:
   contents: write
 
+# One job at a time on gh-pages (also used by the Flatpak repository).
 concurrency:
-  group: apt
+  group: gh-pages
   cancel-in-progress: false
 
 jobs:

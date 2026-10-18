@@ -7,9 +7,22 @@ Website: <https://bernie.websolutis.com/>
 
 This repository only hosts the **Linux packages** of Bernie (its source code is not public):
 
-- **Releases**: `.deb` packages (x86_64 and ARM 64-bit, e.g. Raspberry Pi) and AppImage.
-- **APT repository** (coming soon): updates through `apt` on Debian, Ubuntu, Linux Mint and Raspberry Pi OS.
-- **Flathub** and **Snap Store** (coming soon).
+- **Releases**: `.deb` packages (x86_64 and ARM 64-bit, e.g. Raspberry Pi), AppImage and Flatpak bundles.
+- **APT repository**: install and updates through `apt` on Debian, Ubuntu, Linux Mint and Raspberry Pi OS:
+
+  ```sh
+  curl -fsSL https://beber666.github.io/bernie-releases/bernie.gpg | sudo tee /usr/share/keyrings/bernie.gpg > /dev/null
+  echo "deb [signed-by=/usr/share/keyrings/bernie.gpg] https://beber666.github.io/bernie-releases stable main" | sudo tee /etc/apt/sources.list.d/bernie.list
+  sudo apt update && sudo apt install bernie
+  ```
+
+- **Flatpak repository**: install and updates on any distribution with Flatpak (x86_64 and ARM 64-bit):
+
+  ```sh
+  flatpak install --user https://beber666.github.io/bernie-releases/flatpak/bernie.flatpakref
+  ```
+
+- **Snap Store** and **AUR** (coming soon).
 
 USB lasers: your account must be a member of the `dialout` group
 (`sudo usermod -aG dialout $USER`, then log out and back in).
@@ -17,7 +30,8 @@ USB lasers: your account must be a member of the `dialout` group
 ---
 
 **Bernie** prépare et pilote vos gravures et découpes au laser. Ce dépôt n'héberge que les **paquets Linux** de Bernie
-(le code n'est pas public) : paquets `.deb` (x86_64 et ARM 64 bits, Raspberry Pi) et AppImage dans les « Releases »,
-bientôt un dépôt APT, Flathub et le Snap Store. Site : <https://bernie.websolutis.com/fr/>
+(le code n'est pas public) : paquets `.deb` (x86_64 et ARM 64 bits, Raspberry Pi), AppImage et Flatpak dans les
+« Releases », dépôt APT et dépôt Flatpak (commandes ci-dessus, mises à jour comprises), bientôt le Snap Store et l'AUR.
+Site : <https://bernie.websolutis.com/fr/>
 
 © 2026 Websolutis. Bernie is free to download and use; redistribution of these packages is allowed unchanged.
