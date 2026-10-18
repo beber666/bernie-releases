@@ -53,5 +53,5 @@ parts:
       - on amd64: https://github.com/beber666/bernie-releases/releases/download/v0.9.0/Bernie_0.9.0_amd64.deb
       - on arm64: https://github.com/beber666/bernie-releases/releases/download/v0.9.0/Bernie_0.9.0_arm64.deb
     source-type: deb
-    stage-packages:
-      - libwebkit2gtk-4.1-0
+    # WebKitGTK 4.1 et Mesa viennent du contenu gnome-42-2204 (extension gnome) : n'en embarquer aucune autre copie
+    # (deux Mesa mêlés empêchent l'app de démarrer : « did not find extension DRI_Mesa »).
