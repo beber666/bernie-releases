@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bernie — APT repository</title>
+<style>
+  body { font: 16px/1.55 system-ui, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; color: #151515; background: #f7f4ee; }
+  pre { background: #151515; color: #f7f4ee; padding: 12px 14px; border-radius: 8px; overflow-x: auto; font-size: 14px; }
+  a { color: #2563eb; }
+  @media (prefers-color-scheme: dark) { body { background: #151515; color: #f7f4ee; } pre { background: #2a2a2a; } }
+</style>
+</head>
+<body>
+<h1>Bernie — APT repository</h1>
+<p><a href="https://bernie.websolutis.com/">Bernie</a> prepares and runs your laser engraving and cutting jobs.
+This repository installs it and keeps it up to date on Debian, Ubuntu, Linux Mint and Raspberry Pi OS (x86_64 and ARM 64-bit).</p>
+<pre>curl -fsSL https://beber666.github.io/bernie-releases/bernie.gpg | sudo tee /usr/share/keyrings/bernie.gpg &gt; /dev/null
+echo "deb [signed-by=/usr/share/keyrings/bernie.gpg] https://beber666.github.io/bernie-releases stable main" | sudo tee /etc/apt/sources.list.d/bernie.list
+sudo apt update &amp;&amp; sudo apt install bernie</pre>
+<p>USB lasers: your account must be a member of the <code>dialout</code> group
+(<code>sudo usermod -aG dialout $USER</code>, then log out and back in).</p>
+<p lang="fr"><strong>En français :</strong> ces trois commandes installent Bernie et ses mises à jour sur Debian, Ubuntu,
+Linux Mint et Raspberry Pi OS. Lasers en USB : votre compte doit faire partie du groupe <code>dialout</code>.</p>
+<p>Packages: <a href="https://github.com/beber666/bernie-releases/releases">github.com/beber666/bernie-releases</a></p>
+</body>
+</html>
