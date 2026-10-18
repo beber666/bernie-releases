@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Bernie</title>
+  <!-- Icône de Bernie : calques B et Etincelle de apps/apple/Bernie/AppIcon.icon sur le fond de l'icône. -->
+  <rect width="1024" height="1024" rx="229" ry="229" fill="#F7F4EE"/>
+  <g transform="translate(512 512) scale(0.87) translate(-607.5 -621.5)" fill="#151515">
+    <path d="M395 343L404.2 617.8L503 538L417.2 630.8L595 640L417.2 649.2L503 750L404.2 662.2L395 915L385.8 662.2L282 748L372.8 649.2L205 640L372.8 630.8L282 538L385.8 617.8Z"/>
+    <path d="M440 253H815C915 253 985 330 985 430C985 505 935 565 855 595C945 625 1010 700 1010 790C1010 900 925 990 815 990H440V795H705C745 795 778 762 778 722C778 682 745 648 705 648H650L740 537C758 515 745 487 710 487H440Z"/>
+  </g>
+</svg>

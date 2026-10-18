@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Bernie
+GenericName=Laser Engraving
+GenericName[fr]=Gravure laser
+Comment=Prepare and run laser engraving and cutting jobs
+Comment[fr]=Préparer et piloter vos gravures et découpes au laser
+Exec=bernie %F
+Icon=${SNAP}/meta/gui/bernie.svg
+Terminal=false
+Categories=Graphics;Engineering;
+Keywords=laser;engraving;engraver;cutter;GRBL;G-code;CNC;SVG;gravure;découpe;
+MimeType=application/x-bernie;application/x-bernielot;
+StartupWMClass=bernie-desktop

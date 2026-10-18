@@ -1,0 +1,57 @@
+# Snap of Bernie, made from the published .deb packages (amd64, arm64) of this repository. The version is set by the
+# workflow (.github/workflows/snap.yml) from the release tag.
+name: bernie
+title: Bernie
+version: '0.9.0'
+summary: Prepare and run laser engraving and cutting jobs
+description: |
+  Bernie prepares and runs your laser engraving and cutting jobs, from the first line to the last pass. Free, with no
+  account, no subscription and no ads.
+
+  - A complete vector editor: shapes, nodes, booleans, offsets, arrays, nesting
+  - Text in your own fonts, text on a path, variable text, QR codes and barcodes
+  - Photo engraving: proven dithering or grayscale, with a preview of the engraving
+  - 30 color layers; more than 1,800 ready-to-use material settings and grid material tests
+  - Path preview, estimated time and pre-flight check
+  - GRBL, grblHAL, FluidNC, Marlin and Smoothieware lasers over USB or the network; Ruida over the network; galvo
+    through EZCad export
+  - Built-in virtual laser: try everything without a machine
+  - Opens SVG, DXF, PDF, AI, EPS and images; exports G-code
+
+  USB lasers: connect the USB access once with `sudo snap connect bernie:raw-usb`, and make sure your account is a
+  member of the dialout group.
+license: Proprietary
+website: https://bernie.websolutis.com/
+contact: https://bernie.websolutis.com/suggest-an-idea/
+donation: https://www.paypal.biz/websolutis
+icon: snap/gui/bernie.svg
+base: core22
+grade: stable
+confinement: strict
+architectures:
+  - build-on: amd64
+  - build-on: arm64
+
+apps:
+  bernie:
+    command: usr/bin/bernie-desktop
+    desktop: meta/gui/bernie.desktop
+    common-id: com.websolutis.Bernie
+    extensions: [gnome]
+    plugs:
+      - home
+      - removable-media
+      - network
+      - network-bind
+      - raw-usb
+      - camera
+
+parts:
+  bernie:
+    plugin: dump
+    source:
+      - on amd64: https://github.com/beber666/bernie-releases/releases/download/v0.9.0/Bernie_0.9.0_amd64.deb
+      - on arm64: https://github.com/beber666/bernie-releases/releases/download/v0.9.0/Bernie_0.9.0_arm64.deb
+    source-type: deb
+    stage-packages:
+      - libwebkit2gtk-4.1-0
