@@ -93,6 +93,7 @@ jobs:
           SIGN=(--gpg-sign="$KEY" --gpg-homedir="$GNUPGHOME")
           R=flatpak/repo
           # Git keeps no empty folder: those of the OSTree repository are made again.
+          mkdir -p "$R"
           [ -f "$R/config" ] || ostree init --mode=archive-z2 --repo="$R"
           mkdir -p "$R"/{objects,tmp,state,extensions,refs/heads,refs/remotes,refs/mirrors}
           for b in bundles/*.flatpak; do
