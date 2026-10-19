@@ -1,9 +1,9 @@
 # Snap of Bernie, made from the published .deb packages (amd64, arm64) of this repository. The version is set by the
 # workflow (.github/workflows/snap.yml) from the release tag.
 name: bernie
-title: Bernie
+title: Bernie – Laser Engraving
 version: '0.9.0'
-summary: Prepare and run laser engraving and cutting jobs
+summary: Draw, cut and engrave photos
 description: |
   Bernie prepares and runs your laser engraving and cutting jobs, from the first line to the last pass. Free, with no
   account, no subscription and no ads.
