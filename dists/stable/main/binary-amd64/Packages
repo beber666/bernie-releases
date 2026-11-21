@@ -1,23 +1,5 @@
 Package: bernie
 Architecture: amd64
-Version: 2.0.10
-Priority: optional
-Section: graphics
-Maintainer: Websolutis
-Installed-Size: 43847
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0
-Filename: pool/main/b/bernie/Bernie_2.0.10_amd64.deb
-Size: 23211514
-MD5sum: b2a5e39e83899881aa30ee303a314f9f
-SHA1: 9be07046b30a7175bebbf06fa602a23048758214
-SHA256: 6e73192a6c3a8ee06de8899deae69cbb995a62b3fbb1c39a51b57a42843159f5
-SHA512: 4d1b277842cc1854fe9a4a4a27acf73308ea790903aa267bc95c2cd7c5c6a9c4491029a7ddbf1ace834eedceff7b98cc55135ac9208c357856c9456c731ae13c
-Homepage: https://bernie.websolutis.com/
-Description: Prepare and run laser engraving and cutting jobs
- Bernie prepares and runs your laser engraving and cutting jobs: a complete vector editor, photo engraving, color layers, material tests, preview and estimated time, and control of GRBL, grblHAL, FluidNC, Marlin and Smoothieware lasers over USB or the network. Free, with no account, no subscription and no ads.
-
-Package: bernie
-Architecture: amd64
 Version: 2.0.11
 Priority: optional
 Section: graphics
@@ -48,6 +30,24 @@ MD5sum: 9c43df434502d9f62ef965ce4478cf72
 SHA1: d28971d88e338569e32a2f925e26a566f3dca413
 SHA256: e355d80a3f69bec731251efa17222b49433c8052cbbbafce78aa19f6869b37a8
 SHA512: 52e4f70f26a1020021d30c0c285fc64e54f464b65004bbe119a314ef1d5b01880a3a08708ae78b07328df91399655d67fc34a15d7c8b600720080b32451fd3b1
+Homepage: https://bernie.websolutis.com/
+Description: Prepare and run laser engraving and cutting jobs
+ Bernie prepares and runs your laser engraving and cutting jobs: a complete vector editor, photo engraving, color layers, material tests, preview and estimated time, and control of GRBL, grblHAL, FluidNC, Marlin and Smoothieware lasers over USB or the network. Free, with no account, no subscription and no ads.
+
+Package: bernie
+Architecture: amd64
+Version: 2.0.13
+Priority: optional
+Section: graphics
+Maintainer: Websolutis
+Installed-Size: 43917
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/main/b/bernie/Bernie_2.0.13_amd64.deb
+Size: 23258652
+MD5sum: 3315d6ed6ff5b968be423e5f2a2cfeea
+SHA1: af8d195b3c03b6efb3b2cc7651ebbc85281b170c
+SHA256: 9999407def583987b05954316fdc02242f30a6cfa0581f214d8407a87ff3b32e
+SHA512: 7b55f3b9490a53b9a0db7bc5e28b6bf9bd4a0bf3a62ddaa8533dc32e50a68ad666bab4e92e8870883327c291790661f55dbce3613ad3e1bf69005b98099d4cdc
 Homepage: https://bernie.websolutis.com/
 Description: Prepare and run laser engraving and cutting jobs
  Bernie prepares and runs your laser engraving and cutting jobs: a complete vector editor, photo engraving, color layers, material tests, preview and estimated time, and control of GRBL, grblHAL, FluidNC, Marlin and Smoothieware lasers over USB or the network. Free, with no account, no subscription and no ads.
