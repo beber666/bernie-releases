@@ -8,21 +8,29 @@ description: |
   Bernie prepares and runs your laser engraving and cutting jobs, from the first line to the last pass. Free, with no
   account, no subscription and no ads.
 
-  - A complete vector editor: shapes, nodes, booleans, offsets, arrays, nesting
+  - A complete vector editor: shapes, nodes, booleans, offsets, arrays, nesting, parametric sketches
   - Text in your own fonts, text on a path, variable text, QR codes and barcodes
   - Photo engraving: proven dithering or grayscale, with a preview of the engraving
   - 30 color layers; more than 1,800 ready-to-use material settings and grid material tests
   - Path preview, estimated time and pre-flight check
-  - GRBL, grblHAL, FluidNC, Marlin and Smoothieware lasers over USB or the network; Ruida over the network; galvo
-    through EZCad export
+  - GRBL, grblHAL, FluidNC, Marlin and Smoothieware lasers over USB or the network; Ruida CO2 controllers; the whole
+    xTool range; K40 with its stock M2 Nano board; vinyl cutters and pen plotters; galvo through EZCad export
   - Built-in virtual laser: try everything without a machine
-  - Opens SVG, DXF, PDF, AI, EPS and images; exports G-code
+  - Opens SVG, DXF, PDF, AI, EPS, LightBurn and xTool projects and images; exports G-code
 
   USB lasers: connect the USB access once with `sudo snap connect bernie:raw-usb`, and make sure your account is a
   member of the dialout group.
+
+  Learn more:
+  - Website: https://bernie.websolutis.com/
+  - Supported lasers: https://bernie.websolutis.com/compatibility/
+  - User manual: https://bernie.websolutis.com/manual/
+  - Features: https://bernie.websolutis.com/features/
+  - Downloads (Windows, Mac, iPad, Linux): https://bernie.websolutis.com/download/
 license: Proprietary
 website: https://bernie.websolutis.com/
 contact: https://bernie.websolutis.com/suggest-an-idea/
+issues: https://bernie.websolutis.com/suggest-an-idea/
 donation: https://www.paypal.biz/websolutis
 icon: snap/gui/bernie.svg
 base: core22

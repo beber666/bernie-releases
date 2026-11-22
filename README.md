@@ -22,7 +22,8 @@ This repository only hosts the **Linux packages** of Bernie (its source code is 
   flatpak install --user https://beber666.github.io/bernie-releases/flatpak/bernie.flatpakref
   ```
 
-- **Snap Store** and **AUR** (coming soon).
+- **Snap Store**: `sudo snap install bernie` (https://snapcraft.io/bernie).
+- **AUR** (Arch Linux, Manjaro): `bernie-bin` (https://aur.archlinux.org/packages/bernie-bin).
 
 USB lasers: your account must be a member of the `dialout` group
 (`sudo usermod -aG dialout $USER`, then log out and back in).
@@ -31,7 +32,18 @@ USB lasers: your account must be a member of the `dialout` group
 
 **Bernie** prépare et pilote vos gravures et découpes au laser. Ce dépôt n'héberge que les **paquets Linux** de Bernie
 (le code n'est pas public) : paquets `.deb` (x86_64 et ARM 64 bits, Raspberry Pi), AppImage et Flatpak dans les
-« Releases », dépôt APT et dépôt Flatpak (commandes ci-dessus, mises à jour comprises), bientôt le Snap Store et l'AUR.
+« Releases », dépôt APT et dépôt Flatpak (commandes ci-dessus, mises à jour comprises), Snap Store et AUR.
 Site : <https://bernie.websolutis.com/fr/>
+
+## Learn more · En savoir plus · Más información · Scopri di più · Mehr erfahren
+
+| | English | Français | Español | Italiano | Deutsch |
+|---|---|---|---|---|---|
+| Website | [bernie.websolutis.com](https://bernie.websolutis.com/) | [Site](https://bernie.websolutis.com/fr/) | [Sitio](https://bernie.websolutis.com/es/) | [Sito](https://bernie.websolutis.com/it/) | [Website](https://bernie.websolutis.com/de/) |
+| Supported lasers | [Compatibility](https://bernie.websolutis.com/compatibility/) | [Compatibilité](https://bernie.websolutis.com/fr/compatibilite/) | [Compatibilidad](https://bernie.websolutis.com/es/compatibilidad/) | [Compatibilità](https://bernie.websolutis.com/it/compatibilita/) | [Kompatibilität](https://bernie.websolutis.com/de/kompatibilitaet/) |
+| Features | [Features](https://bernie.websolutis.com/features/) | [Fonctionnalités](https://bernie.websolutis.com/fr/fonctionnalites/) | [Funciones](https://bernie.websolutis.com/es/funciones/) | [Funzionalità](https://bernie.websolutis.com/it/funzionalita/) | [Funktionen](https://bernie.websolutis.com/de/funktionen/) |
+| User manual | [Manual](https://bernie.websolutis.com/manual/) | [Manuel](https://bernie.websolutis.com/fr/manuel/) | [Manual de usuario](https://bernie.websolutis.com/es/manual-de-usuario/) | [Manuale](https://bernie.websolutis.com/it/manuale/) | [Handbuch](https://bernie.websolutis.com/de/handbuch/) |
+| Downloads | [Download](https://bernie.websolutis.com/download/) | [Télécharger](https://bernie.websolutis.com/fr/telecharger/) | [Descargar](https://bernie.websolutis.com/es/descargar/) | [Scarica](https://bernie.websolutis.com/it/scarica/) | [Herunterladen](https://bernie.websolutis.com/de/herunterladen/) |
+| Share a laser | [Bernie Link](https://bernie.websolutis.com/bernie-link/) | [Bernie Link](https://bernie.websolutis.com/fr/partager-laser-bernie-link/) | [Bernie Link](https://bernie.websolutis.com/es/compartir-laser-bernie-link/) | [Bernie Link](https://bernie.websolutis.com/it/condividere-laser-bernie-link/) | — |
 
 © 2026 Websolutis. Bernie is free to download and use; redistribution of these packages is allowed unchanged.
