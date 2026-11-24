@@ -4,39 +4,39 @@ Hash: SHA512
 Architectures: amd64 arm64
 Codename: stable
 Components: main
-Date: Mon, 23 Nov 2026 13:24:35 +0000
+Date: Tue, 24 Nov 2026 01:40:14 +0000
 Description: Bernie, laser engraving and cutting
 Label: Bernie
 Origin: Websolutis
 Suite: stable
 MD5Sum:
- 923c9cb171190cc6a75e14527e57323d              195 Release
- 82a4af54495c02e6c1be823db234ae8e             2871 main/binary-amd64/Packages
- 924bbf7428b547e2ec5a9d17503f4eb4             1048 main/binary-amd64/Packages.gz
- 1b218d98e37df6d0ac9ec642b781173b             2871 main/binary-arm64/Packages
- b41f1684ee6f2bd7a976eb7b46fe0a29             1043 main/binary-arm64/Packages.gz
+ 659f899c7e909893539900b39e3b119a              195 Release
+ d7b17121e11385120f9facbfa7874322             2871 main/binary-amd64/Packages
+ 3ec90e567a3ed8c085bc0e970862c21e             1045 main/binary-amd64/Packages.gz
+ 81d1fd95c447dc6fa96100b08096e3a4             2871 main/binary-arm64/Packages
+ 640d728b245f1981418b2df40d9f7984             1045 main/binary-arm64/Packages.gz
 SHA1:
- 8fc7cf4f7bab39af9fdd252b6d5bb45d3ec960ed              195 Release
- fe64217acb602410a8f4a61b37baf2018fbd0be5             2871 main/binary-amd64/Packages
- 33f1f394ebe2f88f819d17b101c1af59491bee74             1048 main/binary-amd64/Packages.gz
- 1a7fb9b708bb974900b91eaa804dc59e6b8cf114             2871 main/binary-arm64/Packages
- 0542f086c8ceab5a98444b0d708672b9752bd34f             1043 main/binary-arm64/Packages.gz
+ 530b93fafaa12099586d38f28447f62fb60158b2              195 Release
+ 00f15e578bd75ffa7e01ccf42dec67585031dfcb             2871 main/binary-amd64/Packages
+ a088d2cd6b83dae3a455cd34aafe1cb35413c582             1045 main/binary-amd64/Packages.gz
+ a87bfad6f213428768578fdd547e102d0aff5b16             2871 main/binary-arm64/Packages
+ 664f513c2796c1b3dca8e2e6530a68fab2a7467d             1045 main/binary-arm64/Packages.gz
 SHA256:
- 860db3021c328f967e6734e46ae6783e06463383e1180027f97694b6fc106c44              195 Release
- 2c3599e5cf31650fc502b2e0f17066a6ab9bcb5bc52186db8d08515dd997fe97             2871 main/binary-amd64/Packages
- d46aa928de718bcebd0f40677bb527642ac2b466a7aa95af2b3330d8b88982df             1048 main/binary-amd64/Packages.gz
- bcc34b898042bfed4d7e5bf0ba01f8afebd15e596f2bca9ecd85cfe890a6b505             2871 main/binary-arm64/Packages
- 3535493b3afb9c2e85305a5e62e1618c5d97c5859ca7ee21280f7053d6209d5f             1043 main/binary-arm64/Packages.gz
+ 1ed2d4fbda8c261f9c8ccd6532ba291a8eb263b3d961fc82764f38984507e66e              195 Release
+ 932c707705e3861ad7a130a76c9a806aaaf475637f3782062e754190fd756ae6             2871 main/binary-amd64/Packages
+ 8244bd83243f217fbb1373627f7d9fdea916459ec459b3f4a9f43b647b2e1f18             1045 main/binary-amd64/Packages.gz
+ 84f5b1c00a550c9671b621ab2f803cc0847addc69c645873aad061833bfb20ce             2871 main/binary-arm64/Packages
+ fe671e909dc8cbbc7244774a30ab8b9c63db71d1400791ce6e0cdb6882f0d031             1045 main/binary-arm64/Packages.gz
 SHA512:
- 8fdbb2f3d39f0e73b5428a5b8e5f1375235fc126a9249f0de96f5a4821c4f603817e6a667b3fe774547eb7d249137da3285a47e0aa85214a330febeb559e3ae6              195 Release
- 1574143723d032bc44df70d0a2b66323342d0212e42d613f8399329ea01c3ee1ef955a957a38e86d29ae5412a28c0bad2830f997dbffcf1105e6d38235e46621             2871 main/binary-amd64/Packages
- aae0422f206efb2ccfb55cb516bdaa6bdf64588992156953a4ba729bafaea81572e4876594556bbd61a0472d3568b21381d384a6d7c50b0e1ab5a0798b111abd             1048 main/binary-amd64/Packages.gz
- 02a0f138bef8d3e040137a34f5295a3fc8acd0c5838e1b54bdcee61d355461a9b1293b0aa24811c003b0c0c92780df7c3686a9fae12d7baf50ad79ffd6d3e85f             2871 main/binary-arm64/Packages
- c1fc808632b211e6ee53949cde92e8d5424f23fb35d98432a7259e277f3f969ad0a6326c2f7eb98053684fb12d96fd41f095134d5fed0e5d051b08abb2788519             1043 main/binary-arm64/Packages.gz
+ 790355bad085071edbf75c1118d7cbe11c9b88346435c1d5d56630119114fc6a67db5c8ff1c3f8d73c660f0317b1b214fef77c43a3d08ae433bed8ef6fa732bf              195 Release
+ 269b2dd51acb7133d56fb6f00a0fe98b856f9a521e20985219577865325f7c52228b6e3f565d1c50b9399bd4fead4b2b5064204be072d1e8ef7efce0b5f595ab             2871 main/binary-amd64/Packages
+ 6ad36e10e2f29a5a6160bec46dad3ca536faa7a84f8d6cf0cf0a3a3c9633451fa8e6255a66e20a5b81d236c3e51d0758c6a8917e7f24d16536a9e03e83a6c3a8             1045 main/binary-amd64/Packages.gz
+ 4e480916c08d46867f9427bdd761e812d17495501510ade2c4a490e72d64ca4755c67291949e164d10d5b94bce660479c290f71d620801edd26d2c8eeaa84740             2871 main/binary-arm64/Packages
+ fb125baa2d892213f97576c97adfb4f3f7df6b8e29d515109d06866e6aefd220867798fec1713c300168e553e2fc68bb3fa66965542c0d19b43433179c2abe1f             1045 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRk36L4oHQEWC/rhhEPFVm+DQ1eTAUCawQ+kwAKCRAPFVm+DQ1e
-TMFsAP9NCv6V0e0OylJF8DCOEjC3tU5SRphQeQZlq0sgrJY/CgD8DqjnJ3UA62FN
-XYNBDjYL33yHq3RlBLC9LCBE/+T+xgc=
-=UIqd
+iHUEARYKAB0WIQRk36L4oHQEWC/rhhEPFVm+DQ1eTAUCawTq/gAKCRAPFVm+DQ1e
+TMZmAP4lv6P+DcOr9er2p16WW36kgjiJ5wmCtNfyZX+NXxWacQD/RyB2STENFNrI
+Y4wuflnek42i7jhJmYQnw7ARE3JMawQ=
+=gFEd
 -----END PGP SIGNATURE-----
